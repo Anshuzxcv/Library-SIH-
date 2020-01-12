@@ -1,0 +1,24 @@
+<%- include("header") -%>
+<div class="text-center">
+  <form class="form-signin loginContainner" action="/studentlogin" method="post">
+    <img class="mb-4 loginimg" src="images/boy.png" alt="" height="72" width="72">
+    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    <label for="inputRoll" class="sr-only">Roll Number</label>
+    <input type="number" name="inputRoll" id="inputRoll" class="form-control" placeholder="Roll Number" required autofocus>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Password" required>
+    <div class="checkbox mb-3 input-group">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    <a href="">Forgotten account?</a>
+    <p>
+      Don't have an account?
+      <a href="/signup">Sign up</a>
+    </p>
+    <p class="mt-5 mb-3 text-muted">& Bookvilla</p>
+  </form>
+</div>
+<%- include("footer") -%>

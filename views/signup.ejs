@@ -1,0 +1,116 @@
+<%- include("header") -%>
+
+  <div class='wrapper'>
+
+    <div class="signup-page signup-page-default">
+      <div class="header-main">
+        <a class="header-logo" href=""></a>
+
+        <h1 class="h2">Sign up for free and be a part of Bookvilla</h1>
+
+        <div class="header-login">
+          <span>Already have an account?&nbsp;</span>
+          <div class="btn-group">
+  <button type="button" class="btn btn-sm btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Log in
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="/studentlogin">Login as Student</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="/adminlogin">Login as Admin</a>
+  </div>
+</div>
+        </div>
+      </div>
+      <div class="signup-content">
+        <div class="benefits page-body">
+          <h2 class="h3"><i class="fas fa-user-shield"></i> Free account</h2>
+          <p>Surf through a wide variety of books.</p>
+
+          <hr />
+
+          <h2 class="h3"><span class="icon hk-icon-sm hk-icon-app"></span><i class="fas fa-universal-access"></i> Accessibility</h2>
+          <p>Keep track of your issue and returns. Get notification for the due.</p>
+
+          <hr />
+
+          <h2 class="h3"><span class="icon hk-icon-sm hk-icon-deploy"></span><i class="fas fa-cogs"></i> User Friendly</h2>
+          <p>Voice based search and visual represantation of books in shelves.</p>
+        </div>
+
+        <div class="signup page-sidebar">
+
+          <form class="formDesign" action="/signup" accept-charset="UTF-8" method="post">
+            <input type="hidden" name="slug" value="login" />
+
+            <div class="input-group">
+              <label for="name">
+                Name
+                <sup title="Required">*</sup>
+              </label> <input type="text" name="name" id="name" class="required" autocapitalize="off" autofocus="autofocus" placeholder="Name" required autofocus/>
+            </div>
+
+            <div class="input-group">
+              <label for="roll_number">
+                Roll Number
+                <sup title="Required">*</sup>
+              </label> <input type="number" name="roll" class="roll" autocapitalize="off" placeholder="Roll Number" required/>
+            </div>
+
+            <div class="input-group">
+              <label for="email">
+                Email address
+                <sup title="Required">*</sup>
+              </label> <input type="email" name="email" id="email" class="required" autocapitalize="off" placeholder="Email address" required/>
+            </div>
+
+            <div class="input-group">
+              <label for="mobile">
+                Mobile No.
+                <sup title="Required">*</sup>
+              </label> <input type="number" name="mobile" class="mobile" autocapitalize="off" placeholder="Mobile Number" required/>
+            </div>
+
+            <div class="input-group">
+              <label for="branch">
+                Branch
+                <sup title="Required">*</sup>
+              </label>
+              <select name="branch" placeholder="Choose Your Branch" required>
+                <option value="">Select your Branch</option>
+                <option value="civil">Civil Engineering</option>
+                <option value="ece">Electronics & Communication Engineering</option>
+                <option value="cse">Computer Science Engineering</option>
+                <option value="it">Information and Technology</option>
+                <option value="ee">Electrical Engineering</option>
+                <option value="mechanical">Mechanical Engineering</option>
+                <option value="bhmct">Hotel Management and Catering Technology</option>
+                <option value="maritime">Maritime course</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label for="password">
+                Password
+                <sup title="Required">*</sup>
+              </label> <input type="password" name="password" autocapitalize="off" placeholder="create your password" required/>
+            </div>
+
+            <div class="input-group">
+              <label for="password">
+                Conform Password
+                <sup title="Required">*</sup>
+              </label> <input type="password" name="conformPassword" autocapitalize="off" placeholder="conform your password" required/>
+            </div>
+
+            <div class="input-group">
+              <input type="submit" name="commit" value="Create Free Account" class="btn buttonn btn-alt full-width btn-primary" data-disable-with="Create Free Account">
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+<%- include("footer") -%>
