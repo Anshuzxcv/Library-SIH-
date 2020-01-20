@@ -1,0 +1,81 @@
+<%- include("header") -%>
+<%- include("adminnevbar") -%>
+
+<div class="container p-3 mt-8" id="interect">
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="card">
+        <img src="images/request.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Add/Modify</h5>
+          <p class="card-text">Improvenent is the key. No book collection in enough or ample. Here comes our feature of barcode addition or modification.</p>
+          <a href="/add-modify" class="btn btn-primary">Add/Modify</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Material form contact -->
+    <div class="card col-lg-6">
+
+        <h5 class="card-header info-color white-text text-center py-4">
+            <strong>Add / Modify Book</strong>
+        </h5>
+
+        <!--Card content-->
+        <div class="card-body px-lg-5 pt-0">
+
+            <!-- Form -->
+            <form class="text-center" action="/add-modify" method="post">
+
+                <!-- Name -->
+                <div class="md-form mt-3">
+                    <input name="formname" type="text" id="formname" class="form-control">
+                    <label for="formname">Book Name</label>
+                </div>
+
+                <!-- E-mail -->
+                <div class="md-form">
+                    <input name="formisbn" type="number" id="formisbn" class="form-control">
+                    <label for="formisbn">ISBN Name</label>
+                </div>
+
+                <!-- Floor, Column and shelf no. -->
+                <div class="md-form">
+                    <input name="formfloor" type="number" id="formfloor" class="form-control">
+                    <label for="formfloor">Floor Number</label>
+                </div>
+                <div class="md-form">
+                    <input name="formcolumn" type="number" id="formcolumn" class="form-control">
+                    <label for="formcolumn">Column Number</label>
+                </div>
+                <div class="md-form">
+                    <input name="formshelf" type="number" id="formshelf" class="form-control">
+                    <label for="formshelf">Shelf Number</label>
+                </div>
+
+                <!-- avilability -->
+                <div class="md-form">
+                    <input name="formavilability" type="number" id="formavilability" class="form-control">
+                    <label for="formavilability">Availability</label>
+                </div>
+
+                <!-- Send button -->
+                <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit">Upload</button>
+
+            </form>
+            <!-- Form -->
+
+        </div>
+
+    </div>
+    <!-- Material form contact -->
+
+  </div>
+</div>
+
+
+
+
+
+
+<%- include("footer") -%>

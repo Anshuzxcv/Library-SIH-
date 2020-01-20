@@ -1,0 +1,54 @@
+<%- include("header") -%>
+<%- include("studentnevbar") -%>
+<div class="container p-3 mt-8" id="interect">
+  <div class="row">
+    <div class="col align-items-start">
+      <div class="col-lg-4">
+        <div class="card">
+          <img src="images/interact.png" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Interect</h5>
+            <p class="card-text">We try to make our user as much satisfied by the easy to use and interactive UI. We prioritize your comfort.</p>
+            <a href="/request" class="btn btn-primary">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col col-sm-8">
+      <div class="alert alert-info" role="alert">
+        Please describe reason, why you want to contact us.
+      </div>
+      <form action="mailto:anshuzxcv@gmail.com" method="post" enctype="text/plain">
+        <div class="input-group mb-3">
+          <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">@</span>
+          </div>
+          <input id="inputEmail" name="inputEmail" type="text" class="form-control" readonly class="form-control-plaintext" aria-label="Username" aria-describedby="basic-addon1" value="email@example.com">
+        </div>
+
+        <div class="input-group mb-3">
+          <label for="inputRoll" class="col-sm-2 col-form-label">Roll No.</label>
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">@</span>
+          </div>
+          <input id="inputRoll" name="inputRoll" type="text" class="form-control" readonly class="form-control-plaintext" aria-label="Username" aria-describedby="basic-addon1" value="1804051">
+        </div>
+
+        <div class="input-group mb-3">
+          <label for="inputReason" class="col-sm-2 col-form-label">Reason</label>
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">@</span>
+          </div>
+          <textarea  id="inputReason" name="inputReason" type="text" placeholder="Explain Reason" class="form-control" aria-label="With textarea"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg float-right">Email Us</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+<%- include("footer") -%>

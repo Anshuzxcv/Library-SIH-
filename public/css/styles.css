@@ -497,7 +497,7 @@ iframe {
 body {
   min-width: 320px;
   padding-bottom: 40px;
-  background: linear-gradient(to bottom right, #141e30, #243b55);
+  background: linear-gradient(to bottom right, #42275a, #734b6d );
   background-attachment: fixed;
 }
 
@@ -789,7 +789,7 @@ input, textarea, select {
   border: 1px solid #d3d3d3
 }
 
-input[type="email"], input[type="text"], input[type="tel"], input[type="password"], input[type="url"], input[type="ipv4"], input[type="search"], input[type="number"], textarea, select {
+input[type="email"], input[type="text"],input[type="search"] input[type="tel"], input[type="password"], input[type="url"], input[type="ipv4"], input[type="search"], input[type="number"], textarea, select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -804,20 +804,20 @@ input[type="email"], input[type="text"], input[type="tel"], input[type="password
   transition: all 0.15s ease-out 0s
 }
 
-input[type="email"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="password"]:focus, input[type="url"]:focus, input[type="ipv4"]:focus, input[type="search"]:focus, input[type="number"]:focus, textarea:focus, select:focus {
+input[type="email"]:focus, input[type="text"]:focus,input[type="search"]:focus, input[type="tel"]:focus, input[type="password"]:focus, input[type="url"]:focus, input[type="ipv4"]:focus, input[type="search"]:focus, input[type="number"]:focus, textarea:focus, select:focus {
   background: white;
   box-shadow: 0 0 6px rgba(121, 88, 159, 0.2);
   border-color: #79589F;
   outline: none
 }
 
-input[type="email"]:-moz-focusring, input[type="text"]:-moz-focusring, input[type="tel"]:-moz-focusring, input[type="password"]:-moz-focusring, input[type="url"]:-moz-focusring, input[type="search"]:-moz-focusring, input[type="number"]:-moz-focusring, textarea:-moz-focusring, select:-moz-focusring {
+input[type="email"]:-moz-focusring, input[type="text"]:-moz-focusring,input[type="search"]:-moz-focusring,input[type="search"]:-moz-focusring,input[type="search"]:-moz-focusring,input[type="search"]:-moz-focusring, input[type="tel"]:-moz-focusring, input[type="password"]:-moz-focusring, input[type="url"]:-moz-focusring, input[type="search"]:-moz-focusring, input[type="number"]:-moz-focusring, textarea:-moz-focusring, select:-moz-focusring {
   transition: none;
   color: transparent;
   text-shadow: 0 0 0 #000
 }
 
-input[type="email"][data-placeholder-active="true"], input[type="text"][data-placeholder-active="true"], input[type="tel"][data-placeholder-active="true"], input[type="password"][data-placeholder-active="true"], input[type="url"][data-placeholder-active="true"], input[type="ipv4"][data-placeholder-active="true"], input[type="search"][data-placeholder-active="true"], input[type="number"][data-placeholder-active="true"], textarea[data-placeholder-active="true"], select[data-placeholder-active="true"] {
+input[type="email"][data-placeholder-active="true"], input[type="text"][data-placeholder-active="true"],input[type="search"][data-placeholder-active="true"], input[type="tel"][data-placeholder-active="true"], input[type="password"][data-placeholder-active="true"], input[type="url"][data-placeholder-active="true"], input[type="ipv4"][data-placeholder-active="true"], input[type="search"][data-placeholder-active="true"], input[type="number"][data-placeholder-active="true"], textarea[data-placeholder-active="true"], select[data-placeholder-active="true"] {
   color: #999
 }
 
@@ -1332,4 +1332,79 @@ input[type="number"] {
   -ms-flex-align: center;
   align-items: center;
   background-color: #f5f5f5;
+}
+.card{
+  width: 18rem;
+  display: inline-block;
+  margin: auto;
+}
+
+.card-img-top{
+  height:17.875rem;
+}
+
+#search{
+  padding:0;
+  padding-left:0.8em;
+}
+
+#interect{
+  background-color: #be8abf;
+}
+
+#thover{
+  position:fixed;
+  width:100%;
+  height:100%;
+  opacity: .6
+}
+
+#tpopup{
+  position:absolute;
+  background:#fff;
+  left:50%;
+  top:50%;
+  border-radius:5px;
+  margin-left:-320px; /* width/2 + padding-left */
+  margin-top:-150px; /* height/2 + padding-top */
+  text-align:center;
+  box-shadow:0 0 10px 0 #000;
+  z-index: 20;
+}
+#tclose{
+  position:absolute;
+  background:black;
+  color:white;
+  right:-15px;
+  top:-15px;
+  border-radius:50%;
+  width:30px;
+  height:30px;
+  line-height:30px;
+  text-align:center;
+  font-size:8px;
+  font-weight:bold;
+  font-family:'Arial Black', Arial, sans-serif;
+  cursor:pointer;
+  box-shadow:0 0 10px 0 #000;
+}
+
+.shelfMap{
+  background-color: #be8abf;
+  position:absolute;
+  left:50%;
+  top:50%;
+  border-radius:5px;
+  margin-left:-320px; /* width/2 + padding-left */
+  margin-top:-150px; /* height/2 + padding-top */
+  text-align:center;
+  box-shadow:0 0 10px 0 #000;
+  z-index: 20;
+}
+ #books{
+   height: 18px;
+ }
+.aligning{
+  margin-left:500px;
+  margin-top:20px;
 }

@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/adminhome"><img src="images/bookvilla_inline.png" alt="" style="height:2.2em"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/adminhome">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/requests">Requests</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Explore
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/admindashboard">Dashboard</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/shelfmap">Update Shelf-Map</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/add-modify">Add/Modify</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/return">Return</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/signout">Signout</a>
+        </div>
+      </li>
+    </ul>
+    <form method="get" id="search-form" class="form-inline my-2 my-lg-0">
+    <input name="q" id="books" class="form-control" type="search" placeholder="Search" autocomplete="off" autofocus>
+    <button type="button" class="btn bg-light mr-2"><i class="fas fa-microphone"></i></button>
+    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search book</button>
+  </form>
+  </div>
+</nav>
+
+<!-- Popup function -->
+<div id="tpopup">
+  <img src="images/shelfMap.jpg">
+
+  <div id="tclose">X</div>
+</div>
+
+<div id="result" class="container" style="margin-top:10rem; background-color:#edf7fa;">
+
+</div>

@@ -1,0 +1,52 @@
+<%- include("header") -%>
+<%- include("adminnevbar") -%>
+
+<% var i=0; %>
+
+<div class="container-md bg-warning mt-3">
+
+  <form class="" action="/search" method="post">
+
+    <div class="input-group mb-3">
+      <input type="text" name="bookname" class="form-control" placeholder="Book Name" aria-label="Recipient's username" aria-describedby="button-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Search</button>
+      </div>
+    </div>
+
+  </form>
+
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Serial No.</th>
+        <th scope="col">Name</th>
+        <th scope="col">ISBN Number</th>
+        <th scope="col">Floor Number</th>
+        <th scope="col">Column Munber</th>
+        <th scope="col">Shelf Number</th>
+        <th scope="col">Availability</th>
+      </tr>
+    </thead>
+    <tbody>
+
+        <%  books.forEach(function(book){ %>
+          <tr>
+            <th scope="row"><%= ++i %></th>
+            <td><%= book.name %></td>
+            <td> <%= book.isbnNumber %> </td>
+            <td> <%= book.floorNumber %> </td>
+            <td> <%= book.columnNumber %> </td>
+            <td> <%= book.shelfNumber %> </td>
+            <td> <%= book.avilability %> </td>
+            <% }) %>
+          </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+<%- include("footer") -%>

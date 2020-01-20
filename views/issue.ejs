@@ -1,0 +1,50 @@
+<%- include("header") -%>
+<%- include("studentnevbar") -%>
+<div class="container p-3 mt-8" id="interect">
+  <div class="row">
+    <div class="col align-items-start">
+      <div class="col-lg-4">
+        <div class="card">
+          <img src="images/issue.jfif" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Issue</h5>
+            <p class="card-text">It's our prime duty to keep ypur demand at top priority. We refrain from abstracting the users through knowledge.</p>
+            <a href="/request" class="btn btn-primary">Issue</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col col-sm-8">
+      <div class="alert alert-info" role="alert">
+        Please enter ISBN number of book you want to issue.
+      </div>
+      <form action="/issue" method="post">
+        <div class="input-group mb-3">
+          <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">@</span>
+          </div>
+          <input id="inputEmail" name="inputEmail" type="text" class="form-control" readonly class="form-control-plaintext" aria-label="Username" aria-describedby="basic-addon1" value="email@example.com">
+        </div>
+
+        <div class="input-group mb-3">
+          <label for="inputRoll" class="col-sm-2 col-form-label">Roll No.</label>
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">@</span>
+          </div>
+          <input id="inputRoll" name="inputRoll" type="text" class="form-control" readonly class="form-control-plaintext" aria-label="Username" aria-describedby="basic-addon1" value="1804051">
+        </div>
+        <div class="input-group mb-3">
+          <label for="inputISBN" class="col-sm-2 col-form-label">ISBN Number</label>
+          <input id="inputISBN" name="inputisbn" type="number" class="form-control" placeholder="Enter ISBN Number" aria-label="Username" aria-describedby="basic-addon1" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg float-right">Issue Book</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+<%- include("footer") -%>
