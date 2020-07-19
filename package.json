@@ -15,7 +15,7 @@
     "express": "^4.17.1",
     "instascan": "^1.0.0",
     "javascript-barcode-reader": "^0.5.4",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "mongoose": "^5.8.7",
     "path": "^0.12.7",
     "request": "^2.88.0",
