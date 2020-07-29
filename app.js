@@ -311,6 +311,11 @@ app.post('/adminlogin', function (req, res) {
   });
 });
 
-app.listen(3000, function () {
-  console.log('Port 3000 is running.');
+let port = process.env.PORT;
+if (port == null || port == '') {
+  port = 8000;
+}
+
+app.listen(port, function () {
+  console.log('Port has started successfully');
 });
